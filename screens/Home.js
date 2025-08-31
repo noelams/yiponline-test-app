@@ -24,9 +24,7 @@ const Home = () => {
     setConfirmModalIsVisible(false);
   };
 
-  useEffect(() => {
-    console.log("Products:", productList);
-  }, [productList]);
+
   return (
     <View style={styles.container}>
       <Header title={"Home Screen"} />

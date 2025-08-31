@@ -13,9 +13,6 @@ export const ProductProvider = ({ children }) => {
     setProductList((prev) => prev.filter((item) => item.id !== productId));
   };
 
-  useEffect(() => {
-    console.log("Updated product list:", productList);
-  }, [productList]);
   return (
     <ProductContext.Provider value={{ productList, addProduct, removeProduct }}>
       {children}
