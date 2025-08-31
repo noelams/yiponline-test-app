@@ -7,6 +7,7 @@
     "icon": "./assets/yiponline-logo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "jsEngine": "hermes",
     "splash": {
       "image": "./assets/yiponline-logo.png",
       "resizeMode": "contain",
@@ -20,10 +21,16 @@
         "foregroundImage": "./assets/yiponline-logo.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.noelams.yiponlinetestapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e0a95f2b-1472-4250-8c40-515e099cd1f2"
+      }
     }
   }
 }
