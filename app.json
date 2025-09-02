@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/yiponline-logo.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "jsEngine": "hermes",
     "splash": {
       "image": "./assets/yiponline-logo.png",
@@ -31,6 +31,24 @@
       "eas": {
         "projectId": "e0a95f2b-1472-4250-8c40-515e099cd1f2"
       }
-    }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "buildToolsVersion": "35.0.0",
+            "useLegacyPackaging": true,
+            "enableProguardInReleaseBuilds": true,
+            "proguardRules": "proguard-rules.pro"
+          },
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ]
+    ]
   }
 }
